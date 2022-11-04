@@ -61,7 +61,6 @@ function draw() {
         speed1 = 2;
     }
 
-
     // draw the grid (optional -- feel free to remove this line):
     // drawGrid(canvasWidth, canvasHeight);
 }
