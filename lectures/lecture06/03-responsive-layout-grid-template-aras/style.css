@@ -33,24 +33,51 @@ body {
 /* Task 3 */
 
 .task-3.container {
+display: grid;
+grid-template-columns: 300px auto 25%;
+grid-template-rows: 10% 10% 70% 10%;
+border: solid 1px black;
+height: 100vh;
+row-gap: 15;
+column-gap: 15;
+grid-template-areas:
+        "header header header"
+        "sidebar nav ads"
+        "sidebar main ads"
+        "footer footer footer";
 }
 
 .task-3 .header {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  background-color: bisque;
 }
 
 .task-3 .navigation {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  background-color: bisque;
 }
 
 .task-3 .ads {
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .task-3 .sidebar {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
 }
 
 .task-3 .main {
 }
 
 .task-3 .footer {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 

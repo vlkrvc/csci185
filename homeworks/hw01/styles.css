@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    
+    text-align:end;
+    color: white;
+}
+
+header {
+    background-color: rgb(182, 206, 227);
+    
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 10px;
+    justify-content: space-around 10px;
+}
+
+div {
+    text-align: center;
+}
+
+#contact {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+    column-gap: 10px
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 40px auto;
+    margin-bottom: 20px;
+}
+
+.row p {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
