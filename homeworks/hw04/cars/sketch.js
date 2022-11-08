@@ -6,8 +6,16 @@ const c1 = {
     x: 100,
     y: 100,
     width: 200,
-    speed: 0.2,
-    color: 'hotpink'
+    speed: 5,
+    color: 'blue',
+};
+
+const c2 = {
+    x: 200,
+    y: 300,
+    width: 200,
+    speed: -5,
+    color: 'blue',
 };
 
 
@@ -24,9 +32,19 @@ function draw() {
 
     // move the car:
     c1.x += c1.speed;
+    c2.x += c2.speed;
 
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
+    drawCar(c2.x, c2.y, c2.width, c2.speed, c2.color);
+    c1.x += c1.speed
+    if (c1.x > canvasWidth){
+        c1.x = 1;
+    }
+    if (c2.x < 0){
+        c2.x = canvasWidth;
+    }
+
     
     // draw the grid (optional -- feel free to remove this line):
     drawGrid(canvasWidth, canvasHeight);
